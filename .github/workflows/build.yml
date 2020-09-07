@@ -9,9 +9,9 @@ jobs:
     steps:
       - name: Pull code
         uses: actions/checkout@v2
-      - name: List
-        run: ls
       - name: Check DotnetCli
-        run: dotnet
+        run: dotnet build
+      - name: List
+        run: ls   
       - name: Check NPM
-        run: npm
+        run: npm -v
